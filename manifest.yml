@@ -1,7 +1,7 @@
 ---
 applications:
 - name: hello-boot
-  memory: 512M
+  memory: 1024M
   instances: 1
   services: []
   host: hello-boot-rags
