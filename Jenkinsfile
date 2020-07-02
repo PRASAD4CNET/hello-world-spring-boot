@@ -11,7 +11,8 @@ node {
     stage("build & SonarQube analysis") {
          
         withSonarQubeEnv('Sonarqube') {
-            sh 'mvn sonar:sonar '
+            // sh 'mvn sonar:sonar '
+           sh 'mvn sonar:hello-world-spring-boot '
         }    
          
     }
