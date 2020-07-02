@@ -1,10 +1,10 @@
 node {
-    def server = Artifactory.server 'Artifactory2'  
+   // def server = Artifactory.server 'Artifactory2'  * commented by umang and preasad
  
 
     //def mvnHome 
     stage('SCM Checkout'){
-        git 'https://github.com/umang1985/hello-world-spring-boot.git'
+        git 'https://github.com/PRASAD4CNET/hello-world-spring-boot.git'
     //mvnHome = tool 'Maven'
    }
    
