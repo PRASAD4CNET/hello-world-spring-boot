@@ -12,7 +12,8 @@ node {
          
         withSonarQubeEnv('Sonar_Server') {
             // sh 'mvn sonar:sonar '
-           sh 'mvn sonar:hello-world-spring-boot '
+          // sh 'mvn sonar:hello-world-spring-boot '
+           sh 'mvn sonar:sonar -Dsonar.projectKey=helloworld -Dsonar.host.url=http://localhost:9000 -Dsonar.login=17b74c51c7fff3ef23e75d01dc1d8cdf5a9fe3fe'
         }    
          
     }
